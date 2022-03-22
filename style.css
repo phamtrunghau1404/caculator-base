@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Bakbak One', cursive;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: linear-gradient(180deg, #fff, #888);
+}
+
+#resultShow {
+    width:75%;  
+    padding:5px 20px;
+    box-shadow: inset 4px 4px 7px rgb(153, 152, 152), inset -4px -4px 7px rgb(223, 219, 219);
+    border:1px solid #ccc;
+    outline:none;
+    text-align: right;
+    margin:25px;
+    font-size:25px; 
+    border-radius:5px;
+}
+
+.bg-black {
+    background-color: #222;
+    color:#fff;
+}
+
+.caculator {
+    width:250px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+    padding:20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(83, 80, 80), 0 0 20px rgb(133, 130, 130);
+    border-radius:5px;
+    position: relative;
+}
+
+.number {
+    display: flex;
+    width:100%; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+   
+}
+
+.number button {
+    width:45px;
+    height:45px;
+    margin: 8px; 
+    border:none;
+    border-radius:5px;
+    outline:none;
+    font-size: 18px;
+    font-weight:bold;
+    user-select: none;
+}
+
+.number button:nth-child(1), .number button:nth-child(2),.number button:nth-child(3)
+,.number button:nth-child(5), .number button:nth-child(6),.number button:nth-child(7)
+,.number button:nth-child(9), .number button:nth-child(10),.number button:nth-child(11)
+,.number button:nth-child(14),.number button:nth-child(15)
+ {
+    box-shadow: inset 3px 3px 4px rgb(153, 152, 152), inset -3px -3px 4px rgb(223, 219, 219);
+}
+
+
+.number button:hover {
+    box-shadow: 0 0 8px rgb(228, 9, 9);
+    /* color:red;  */
+}
+
+.bg-red {
+    background-color:red;   
+    color:#fff;
+}
+
+.result {
+    margin:20px;
+}
+
+h2 {
+    padding-top: 20px;
+    letter-spacing: 8px;
+}
+
+.width100 {
+    width:165px !important;
+}
+
+@media (max-width: 739px){
+    .caculator {
+        transform: scale(1.2);
+    }
+}
